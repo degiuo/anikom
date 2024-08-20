@@ -1,0 +1,94 @@
+.filterDiv{
+    display: flex;
+    position: fixed;
+    left: 0px;
+    top: 30%;
+    max-width: 200px;
+    max-height: 260px;
+    align-items: start;
+    transition: transform 0.5s ease;
+    transform: translateX(-175px);
+}
+  
+.arrowFilter{
+    background-color: rgb(0, 0, 255);
+    color: white;
+    width: 25px;
+    height: 25px; 
+    text-align: center;
+    cursor: pointer;
+}
+  
+.arrowFilter:hover{
+    background-color: rgb(0, 0, 150);
+}
+  
+.filterDiv .filter{
+    width: 175px;
+    height: 100%;  
+    background-color: rgb(0, 0, 255);
+    text-align: center;
+}
+  
+.filterDiv .filter h2{
+    padding-top: 10px;
+    color: white;
+}
+  
+.filterDiv.open{
+    transform: none;
+} 
+  
+.filterDiv .filter .size #width{
+    text-align: left;
+    width: 170px;
+    height: 25px;
+    font-size: 20px;
+    border: none;
+}
+  
+.filterDiv .filter .size p{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+  
+.filterDiv .filter .size #height{
+    text-align: left;
+    width: 170px;
+    height: 25px;
+    font-size: 20px;
+    border: none;
+}
+  
+.filterDiv .filter .power_consumption{
+    margin-top: 15px;
+}
+  
+.filterDiv .filter .power_consumption #power_consumption{
+    text-align: left;
+    width: 170px;
+    height: 25px;
+    font-size: 20px;
+    border: none;
+    margin-top: 15px;
+}
+  
+.filterDiv .filter .getFilterCloset{
+    background-color: blue;
+    width: 100px;
+    height: 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    border: none;
+    border-radius: 2px;
+    margin: auto;
+    margin-top: 15px;
+}
+  
+.filterDiv .filter .getFilterCloset:hover{
+    background-color: rgb(0, 0, 150);
+}

@@ -1,0 +1,115 @@
+body{
+    max-width: 600px;
+    margin: auto;
+    font-family: Arial;
+}
+
+.header h1{   
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+}
+
+.order{
+    /* border: 1px black solid; */
+    border-radius: 5px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order .closet{
+    font-size: 24px;
+    color: blue;
+    padding: 0;
+    margin: 0;
+}
+
+.order .date{
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.order img{
+    float: left;
+    width: 150px;
+    height: 125px;
+    margin-right: 10px;
+}
+
+.order .content{
+    float: right;
+    margin: 10px;
+    max-width: 320px;
+}
+
+.order .status_code{
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.order .price{
+    color: green;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.order .user{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.order .setStatusBtn{
+    background-color: blue;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    height: 25px;
+    width: 50px;
+}
+
+.order .setStatusBtn:hover{
+    background-color: rgb(0, 0, 150);
+}
+
+.backDiv{
+    position: fixed;
+    left: 25px;
+    top: 25px;
+}
+
+.backDiv #backBtn{
+    background-color: blue;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    width: 80px;
+}
+
+.backDiv #backBtn:hover{
+    background-color: rgb(0, 0, 150);
+}
+
+.report{
+    position: fixed;
+    right: 25px;
+    top: 25px;
+}
+
+.totalPrice{
+    padding: 0px;
+    margin-left: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+}

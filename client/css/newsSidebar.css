@@ -1,0 +1,52 @@
+/* Стили для бокового меню */
+.newsSidebar {
+  padding-top: 125px;
+  padding-right: 25px;
+  width: 150px;
+  /* Ширина бокового меню */
+  position: absolute;
+  /* Фиксированная позиция */
+  top: 0;
+  /* Положение относительно верхнего края страницы */
+  right: 0;
+  /* Положение относительно правого края страницы */
+  height: 100%;
+  /* Цвет фона */
+  /* z-index: 2; */
+  /* Задает порядок слоев (для размещения поверх остального контента) */
+}
+
+/* Стили для блока новости */
+.news {
+  width: 100%;
+  /* Ширина блока новости */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+  /* Отступы */
+}
+
+/* Стили для изображения новости */
+.imageNews img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Стили для заголовка новости */
+.titleNews {
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Стили для даты новости */
+.dateNews {
+  font-size: 0.8em;
+  color: #666;
+}
+
+/* Стили для описания новости */
+.descriptionNews {
+  padding: 10px;
+}

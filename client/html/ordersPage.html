@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказы</title>
+    <link rel="stylesheet" href="../css/orderPage.css">
+    <link rel="stylesheet" href="../css/mail.css">
+</head>
+<body>
+  <div id="container">
+    <div class="header"><h1>Заказы</h1></div>
+    <hr>
+
+    <div class="orders">
+
+    </div>
+    <!-- <div class="totalPrice" id="totalPrice"></div> -->
+  </div>
+
+  <!-- MAIL -->
+  <div id="openFormBtn"><img src="../asset/mail.png"></img></div>
+
+  <div id="feedbackForm" class="feedback-form">
+    <div class="form-container">
+      <span class="close" id="closeFormBtn">&times;</span>
+      <h2>Обратная связь</h2>
+      <form id="feedbackFormContent">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Ваша почта:</label>
+        <input type="email" id="email" name="email" >
+        <label for="tel">Номер телефона:</label>
+        <input type="tel" id="tel" name="tel" >
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" ></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="backDiv"><button type="button" id="backBtn" onclick="location.assign('/')">Назад</button></div>
+
+  <!-- SCRIPTS -->
+  <script src="../js/ordersPage.js"></script>
+  <script src="../js/mailTo.js"></script>
+</body>
+</html>

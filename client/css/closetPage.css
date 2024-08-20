@@ -1,0 +1,323 @@
+body{
+    background-color: white;
+    font-family: Arial;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* .container{.container{
+    max-width: 1000px;
+    margin: auto;
+} */
+
+.image{
+    max-width: 40%;
+    /* margin: 50px; */
+    display: inline-block;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+.wraper{
+    max-width: 1400px;
+    margin-top: 50px;
+    margin: 50px;
+}
+h1{
+    margin: 0;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+   background-color: #e7e7e7af;;
+    height: 100%;
+    padding: 30px;
+    margin: auto;
+    /* margin-top: 100px;
+    margin-right: 150px; */
+    max-width:  35%;
+    text-align: center;
+    border-radius: 5px;
+    /* height: 200px; */
+}
+
+.content .name{
+    color: blue;
+    margin-bottom: 0;
+}
+
+.content .param{
+    font-size: 16px;
+    color: black;
+    margin-top: 5px;
+}
+.buyContein{
+    margin-top: 15px;
+    background-color: #a5a3a35b;
+    /* border: 1px solid #222; */
+    border-radius: 10px;
+    padding: 15px;
+}
+.content .price{
+    font-size: 24px;
+    color: #222;
+    font-weight: bold;
+    /* margin-top: 25px; */
+}
+.underContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+   column-gap: 15px;
+   max-height: 300px;
+}
+.content .ordersBtn{
+    width: 30%;
+    margin: auto;
+    height: 36px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: blue;
+    margin-top: 10px;
+}
+
+.content .ordersBtn:hover{
+    background-color: rgb(0, 0, 170);
+}
+
+.content .reviewsBtn{
+    width: 30%;
+    margin: auto;
+    height: 36px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: gray;
+    margin-top: 10px;
+}
+
+.content .reviewsBtn:hover{
+    background-color: rgb(95, 95, 95);
+}
+
+.description{
+    padding-top: 15px;
+    font-size: 20px;
+    color: black;
+    text-align: justify;
+    margin-left: 25px;
+    /* margin-bottom: 25px; */
+    /* max-width: 900px; */
+}
+
+.reviews{
+    margin-top: 50px;
+}
+
+.reviews .writeReviews .inputComment{
+    font-size: 24px;
+    width: 75%;
+}
+
+.reviews .writeReviews .addBtn{
+    font-size: 26px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    height: auto;
+}
+
+.reviews .writeReviews .addBtn:hover{
+    background-color: rgb(0, 0, 170);
+}
+
+.reviews .comments{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    row-gap: 15px;
+    /* margin-top: 20px; */
+    /* margin: 20px; */
+}
+
+.reviews .comments .avtor{
+    display: block;
+    font-size: 20px;
+    color: black;
+}
+
+.reviews .comments .date{
+    font-size: 16px;
+    color: gray;
+}
+
+.reviews .comments .comment{
+    font-size: 26px;
+    color: black;
+    float: left;
+}
+
+.reviews .comments .com{
+    /* margin: 20px; */
+    padding-left: 15px;
+    background-color: rgba(173, 173, 173, 0.801);
+}
+
+.reviews .comments .com .deleteBtn{
+    /* float: right; */
+    margin-left: 5px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.backDiv{
+    position: fixed;
+    left: 25px;
+    top: 25px;
+}
+
+.backDiv #backBtn{
+    background-color: blue;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    width: 80px;
+}
+
+.backDiv #backBtn:hover{
+    background-color: rgb(0, 0, 150);
+}
+@media (max-width:1000px) {
+    h1{
+        font-size: 24px;
+    }
+}
+@media(max-width:320px){
+    .underContainer{
+        flex-direction: column;
+    }
+    
+   
+}
+
+.orderPanel{
+    /* position: absolute; */
+    position: fixed;
+    display: block;
+    bottom: 20%;
+    top: 25%;
+    right: 0;
+    left: 0;
+    width: 30%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+button{
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+}
+
+input[type="text"], input[type="number"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.orderPanel h1 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+#closePanel{
+    text-decoration: none;
+    border: 0;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    color: #000000;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.online_check{
+    margin-top: 20px;
+    margin-left: 30%;
+}
+
+#request {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 16px;
+    display: block;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 50px;
+}
+
+.navmenu{
+    display: flex;
+}
+
+.navmenu li{
+    text-indent: 15px;
+    list-style-type: none;
+}
+
+.navmenu a{
+    text-decoration: none;
+    color:#535353;
+    font-size: 19pt;
+    transition: 0.5s;
+    display: block;
+}
+.navmenu a:hover{
+    color: #000000;
+    transform: scale(1.1);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-line{
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.logo{
+    font-size: 25pt;
+    margin-bottom: auto;
+    margin-top: auto;
+}

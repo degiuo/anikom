@@ -1,0 +1,73 @@
+#openFormBtn {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+}
+
+#openFormBtn img{
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.feedback-form {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    max-width: 500px;
+    transition: transform 0.3s ease, max-height 0.3s ease;
+    transform: translateY(120%);
+  }
+  
+  .form-container {
+    text-align: center;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: red;
+  }
+  
+  #feedbackFormContent label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #feedbackFormContent input[type="text"],
+  #feedbackFormContent input[type="email"],
+  #feedbackFormContent input[type="tel"],
+  #feedbackFormContent textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  #feedbackFormContent button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #feedbackFormContent button:hover {
+    background-color: #45a049;
+  }
+  

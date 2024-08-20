@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <title>КИТ 24</title> 
+    <link rel="stylesheet" href="../css/login.css">
+	</head> 
+	<body> 
+		<h1>Вход</h1> 
+		<form action="/auth/login" method="POST"> 
+			<!-- <label for="name">Логин:</label>  -->
+			<input type="email" id="email" name="name" placeholder="Введите почту" required>
+
+			<!-- <label for="password">Пароль:</label> -->
+			<input type="password" id="password" name="password" placeholder="Введите пароль" required>
+
+			<div><button type="submit" id="request">Войти</button></div>
+		</form>
+
+		<div class="backDiv"><button type="button" id="backBtn" onclick="location.assign('/')">Назад</button></div>
+
+		<script type="module" src="../js/login.js"></script>
+	</body> 
+</html>

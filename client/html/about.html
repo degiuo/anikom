@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КИТ 24</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/mail.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <a href="/"><img src="../src/logo.png" class="logo" width="100" height="70"></img></a>
+          <div class="nav-line">
+            <ul class="navmenu">
+              <li><a href="/">Главная</a></li>
+              <li><a href="/about" class="selectNav">О компании</a></li>
+              <li><a href="/news">Новости</a></li>
+              <li class="auth" id="login"><a href="/login">Вход</a></li>
+              <li class="auth" id="registration"><a href="/registration">Регистрация</a></li>
+              <li class="complited" id="orders"><a href="/orders">Заказы</a></li>
+              <li class="complited" id="userName"></li>
+              <li class="complited" id="logout"><a href="/auth/logout">Выйти</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <hr>
+      <div class="mainAboutDiv">
+        <div class="mainImg"><img src="../asset/mainAbout.jpg" width="100%"></img></div>
+        <div class="content">
+          <h1>
+            Группа компаний «КИТ24» основана в 2015 году. В настоящий момент штат компании насчитывает 22 человека.
+            Работаем на рынке инженерных систем, сетей связи и систем безопасности Оренбургской области и всей Российской Федерации.
+            <br>
+            <br>Общество с ограниченной ответственностью «Комплексные информационные технологии 24» (ООО «КИТ24») – проектно-монтажная компания, оказывающая услуги в области проектирования, поставки материально-технических ресурсов для строительно-монтажных и пусконаладочных работ, технического обслуживания, планово-предупредительного и капитального ремонта по направлениям: инженерные системы, информационно-вычислительная инфраструктура, системы связи, энергетика.
+          </h1>
+          <div class="contentSVG">
+            <div class="SVG">
+              <img src="../asset/privacy.svg" style="background-color: #1b70ca;"></img>
+              <div>
+                <h3>Надежность</h3>            
+                <h4>Гарантия на всё оборудование и выполненные работы</h4>
+              </div> 
+            </div>
+            <div class="SVG">
+              <img src="../asset/companies.svg" style="background-color: #1b70ca;"></img>
+              <div>
+                <h3>Выгодность</h3>         
+                <h4>Стоимость наших работ вас приятно удивит</h4>
+              </div>    
+            </div>
+            <div class="SVG">
+              <img src="../asset/guarantee.svg" style="background-color: #1b70ca;"></img>
+              <div>
+                <h3>Гарантия результата</h3>
+                <h4>Работаем в срок и в рамках бюджета</h4>
+              </div>
+            </div>
+          </div>
+          <div class="content2">
+            <h1>Специалисты компании</h1>
+            <h2>
+              В компании «КИТ24» работают опытные специалисты, квалификация которых подтверждена сертификатами и удостоверениями. Среди них опытные монтажники, сертифицированные инженеры и программисты по оборудованию Neuroniq, Matrix, JEDIA, SIEMENS, Рубеж, Овен, БОЛИД и многих других. Мы постоянно повышаем квалификацию своих специалистов. 
+              <br>
+              Наши сотрудники принимали участие в работах по реализации инженерных систем и системам безопасности на объектах: Газпром ПХГ, Газпром Добыча, Ростелеком, Сбербанк, Почта России, Транспортная компания ПЭК, ПФР, УФНС и многих других.
+            </h2>
+            <h1>Гарантия качества выполненных работ</h1>
+            <h2>
+              - Сроки прописываются в договоре и мы несём финансовую и репутационную ответственность за их соблюдение;
+              <br>
+              - Мы постоянно совершенствуемся и стремимся применять в своей работе современные методы автоматизированного проектирования;
+              <br>
+              - Мы не генерируем цену из воздуха. Каждое наше решение мы готовы обосновать и защитить перед клиентом;
+              <br>
+              - Индивидуальный подход: помощь в составление технического задания, консультация заказчика на этапе проектирования бесплатное предпроектное обследование;
+              <br>
+              - Мы не стремимся мыслить и работать по шаблонам. Любая задача имеет решение - мы знаем, как его найти.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIL -->
+    <div id="openFormBtn"><img src="../asset/mail.png"></img></div>
+
+    <div id="feedbackForm" class="feedback-form">
+      <div class="form-container">
+        <span class="close" id="closeFormBtn">&times;</span>
+        <h2>Обратная связь</h2>
+        <form id="feedbackFormContent">
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Ваша почта:</label>
+          <input type="email" id="email" name="email" >
+          <label for="tel">Номер телефона:</label>
+          <input type="tel" id="tel" name="tel" >
+          <label for="message">Сообщение:</label>
+          <textarea id="message" name="message" ></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+     <!-- FOOTER -->
+     <div class="footer_container">
+      <p class="footer-menu-text">О нас</p>
+      <ul>
+        <li>
+          <p>Почта:</p>
+          <p>Телефон:</p>
+          <p>Режим работы:</p>
+          <p>Адрес:</p>
+          <p><a href="https://vk.com/qit24" target="_blank"><img src="../asset/vk.svg" width="40" height="40" class="footer_icon"></img></a></p>
+        </li>
+        <li>
+          <p><a href="mailto:info@qit24.ru" target="_blank">info@qit24.ru</a></p>
+          <p><a href="tel:83532323247">+7 (3532) 32-32-47</a></p>
+          <p>Пн. – Пт.: с 9:00 до 18:00</p>
+          <p>460036, г. Оренбург, ул. Карагандинская, 108. помещ. 1А</p>
+          <p><a href="https://t.me/qit24_company"><img src="../asset/telegram.svg" width="40" height="40" class="footer_icon"></img></a></p>
+        </li>
+      </ul>
+    </div>
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/mailTo.js"></script>
+  </body>
+</html>

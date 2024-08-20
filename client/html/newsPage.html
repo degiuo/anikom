@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/newsPage.css">
+        <link rel="stylesheet" href="../css/mail.css">
+        <title>Новости</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+            <nav>
+                <a href="/"><img src="../src/logo.png" class="logo" width="100" height="70"></img></a>
+                <div class="nav-line">
+                <ul class="navmenu">
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/about">О компании</a></li>
+                    <li><a href="/news" class="selectNav">Новости</a></li>
+                    <li class="auth" id="login"><a href="/login">Вход</a></li>
+                    <li class="auth" id="registration"><a href="/registration">Регистрация</a></li>
+                    <li class="complited" id="orders"><a href="/orders">Заказы</a></li>
+                    <li class="complited" id="userName"></li>
+                    <li class="complited" id="logout"><a href="/auth/logout">Выйти</a></li>
+                </ul>
+                </div>
+            </nav>
+            </header>
+            <hr>
+            <!-- BUTTON_ADMIN -->
+            <div class="adminBtn" id="newsAddBtn">
+                <a href="/news_admin">Добавить новость</a>
+            </div>
+    
+            <!-- LIST_NEWS -->
+            <div class="listNews">
+
+            </div>
+        </div>
+
+        <!-- MAIL -->
+        <div id="openFormBtn"><img src="../asset/mail.png"></img></div>
+    
+        <div id="feedbackForm" class="feedback-form">
+            <div class="form-container">
+            <span class="close" id="closeFormBtn">&times;</span>
+            <h2>Обратная связь</h2>
+            <form id="feedbackFormContent">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Ваша почта:</label>
+                <input type="email" id="email" name="email" >
+                <label for="tel">Номер телефона:</label>
+                <input type="tel" id="tel" name="tel" >
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" ></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer_container">
+            <p class="footer-menu-text">О нас</p>
+            <ul>
+            <li>
+                <p>Почта:</p>
+                <p>Телефон:</p>
+                <p>Режим работы:</p>
+                <p>Адрес:</p>
+                <p><a href="https://vk.com/qit24" target="_blank"><img src="../asset/vk.svg" width="40" height="40" class="footer_icon"></img></a></p>
+            </li>
+            <li>
+                <p><a href="mailto:info@qit24.ru" target="_blank">info@qit24.ru</a></p>
+                <p><a href="tel:83532323247">+7 (3532) 32-32-47</a></p>
+                <p>Пн. – Пт.: с 9:00 до 18:00</p>
+                <p>460036, г. Оренбург, ул. Карагандинская, 108. помещ. 1А</p>
+                <p><a href="https://t.me/qit24_company"><img src="../asset/telegram.svg" width="40" height="40" class="footer_icon"></img></a></p>
+                
+            </li>
+            </ul>
+        </div>
+
+        <!-- SCRIPTS -->
+        <script src="../js/nav.js"></script>
+        <script src="../js/newsPage.js"></script>
+        <script src="../js/mailTo.js"></script>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+.mainAboutDiv{
+  text-align: justify;
+  margin-top: 50px;
+}
+
+.mainAboutDiv .content h1{
+  font-size: 24px;
+  font-weight: 100;
+}
+.mainAboutDiv .content h2{
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 100;
+}
+.SVG{
+  display: flex;
+  flex-direction: row;
+
+  align-items: start;
+}
+h3, h4{
+  margin:0;
+}
+
+
+.mainAboutDiv .contentSVG{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 10px;
+  margin: 30px 0px;
+}
+
+.mainAboutDiv .contentSVG .SVG img{
+  width: 75px;
+  height: 75px;
+}
+.mainAboutDiv .contentSVG .SVG div{
+  max-width: 220px;
+  padding-left: 10px;
+}
+
+.mainAboutDiv .content h3{
+  font-size: 16px;
+  font-weight: 700;
+}
+.mainAboutDiv .content h4{
+  font-size: 16px;
+  font-weight: 100;
+}

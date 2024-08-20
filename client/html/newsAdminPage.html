@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КИТ 24 АДМИН ПАНЕЛЬ</title>
+    <link rel="stylesheet" href="../css/adminStyle.css">
+</head>
+<body>
+    <form>
+        <h1>Форма добавления</h1>
+        <input type="file" id="image" name="image" required/>
+        <input type="text" id="title" name="title" placeholder="Введите название" required/>
+        <input type="text" id="description" name="description" placeholder="Описание"/>
+        <button type="submit">Ок</button>
+    </form>
+    
+    <div class="backDiv"><button type="button" id="backBtn" onclick="location.assign('/')">Назад</button></div>
+
+    <script src="../js/newsAdmin.js"></script>
+</body>
+</html>

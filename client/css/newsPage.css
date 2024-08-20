@@ -1,0 +1,75 @@
+.listNews {
+  display: flex;
+  flex-direction: column; /* Располагаем блоки новостей вертикально */
+  align-items: center; /* Выравниваем по горизонтали */
+  padding-top: 50px; /* Отступ сверху для красоты */
+  min-height: 45vh
+}
+
+/* Стили для блока новости */
+.news {
+  position: relative;
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Отступ между блоками новостей */
+}
+
+/* Стили для изображения новости */
+.imageNews img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Стили для заголовка новости */
+.titleNews {
+  padding: 10px;
+  background-color: #f3f3f3;
+  font-weight: bold;
+}
+
+/* Стили для даты новости */
+.dateNews {
+  font-size: 0.8em;
+  color: #666;
+}
+
+/* Стили для описания новости */
+.descriptionNews {
+  padding: 10px;
+}
+
+#newsAddBtn{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#newsAddBtn a{
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: blue;
+  
+  color: white;
+  text-decoration: none;
+}
+
+#newsAddBtn a:hover {
+  background-color: rgb(0, 0, 150);
+}
+
+#deleteNewsBtn{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#deleteNewsBtn img {
+  color: gray;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}

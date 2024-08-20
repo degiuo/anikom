@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>КИТ 24</title>
+		<link rel="stylesheet" href="../css/registration.css">
+	</head> 
+	<body> 
+		<h1>Регистрация</h1> 
+		<form> 
+			<!-- <label for="lastname">Фамилия:</label>  -->
+			<input type="text" id="lastname" name="lastname" placeholder="Введите фамилию" required>
+
+			<!-- <label for="firstname">Имя:</label>  -->
+			<input type="text" id="firstname" name="firstname" placeholder="Введите имя" required>
+
+			<!-- <label for="surname">Отчество:</label>  -->
+			<input type="text" id="surname" name="surname" placeholder="Введите отчество(необязательно)" />
+
+			<!-- <label for="email">Логин:</label>  -->
+			<input type="email" id="email" name="email" placeholder="Введите почту" required>
+
+			<!-- <label for="phone">Номер телефона:</label>  -->
+			<input type="tel" id="phone" name="phone" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="Введите номер телефона" >
+
+			<!-- <label for="password">Пароль:</label> -->
+			<input type="password" id="password" name="password" placeholder="Введите пароль" required>
+
+			<!-- <label for="confirm_password">Подтверждение пароля:</label> -->
+			<input type="password" id="confirm_password" name="confirm_password" placeholder="Подтверждение пароля" required>
+
+			<button type="submit" id="request">Регистрация</button>
+		</form>
+
+		<div class="backDiv"><button type="button" id="backBtn" onclick="location.assign('/')">Назад</button></div>
+		
+		<script type="module" src="../js/registration.js"></script>
+	</body> 
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КИТ 24</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/filter.css">
+    <link rel="stylesheet" href="../css/mail.css">
+    <link rel="stylesheet" href="../css/newsSidebar.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <a href="/"><img src="../src/logo.png" class="logo" width="100" height="70"></img></a>
+          <div class="nav-line">
+            <ul class="navmenu">
+              <li><a href="/" class="selectNav">Главная</a></li>
+              <li><a href="/about">О компании</a></li>
+              <li><a href="/news">Новости</a></li>
+              <li class="auth" id="login"><a href="/login">Вход</a></li>
+              <li class="auth" id="registration"><a href="/registration">Регистрация</a></li>
+              <li class="complited" id="orders"><a href="/orders">Заказы</a></li>
+              <li class="complited" id="userName"></li>
+              <li class="complited" id="logout"><a href="/auth/logout">Выйти</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <hr>
+
+      <!-- LIST_CLOSET -->
+      <div class="listCloset">
+        
+      </div>
+      
+      <!-- FILTER -->
+      <div class="filterDiv">
+        <form class="filter">
+          <h2>Фильтр:</h2>
+          <div class="size">
+            <input type="number" id="width" name="width" pattern="{0-9}[5]" placeholder="Ширина">
+            <p>x</p>
+            <input type="number" id="height" name="height" pattern="{0-9}[5]" placeholder="Высота">
+          </div>
+          <div class="power_consumption">
+            <input type="number" id="power_consumption" name="power_consumption" placeholder="Энергопотр.(Вт)">
+          </div>
+          <button class="getFilterCloset" type="submit">ОК</button>
+        </form>
+        <div class="arrowFilter">></div>
+      </div>
+
+      <!-- ORDER -->
+      <div class="orderPanel">
+        <h1>Заказ</h1>
+        <form class="orderForm">
+          <input type="text" list="address_list" id="addressInput" name="address" placeholder="Введите адрес" required/>
+          <datalist id="address_list"></datalist>
+
+          <input type="text" name="note_order" id="note_order" placeholder="Пожелания">
+
+          <input type="number" name="count" id="count" placeholder="Количество" min="1" max="15" value="1">
+
+          <div class = "online_check">
+            <input type="checkbox" id = "online_check" name = "online_check">
+            <label for="online_check">Оплата по карте</label>
+          </div>
+
+          <button type="submit" id="request">Заказать</button>
+          <button type="button" id="closePanel">x</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- NEWS_SIDEBAR -->
+    <div class="newsSidebar">
+      
+    </div>
+
+    <!-- MAIL -->
+    <div id="openFormBtn"><img src="../asset/mail.png"></img></div>
+
+    <div id="feedbackForm" class="feedback-form">
+      <div class="form-container">
+        <span class="close" id="closeFormBtn">&times;</span>
+        <h2>Обратная связь</h2>
+        <form id="feedbackFormContent">
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Ваша почта:</label>
+          <input type="email" id="email" name="email" >
+          <label for="tel">Номер телефона:</label>
+          <input type="tel" id="tel" name="tel" >
+          <label for="message">Сообщение:</label>
+          <textarea id="message" name="message" ></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer_container">
+      <p class="footer-menu-text">О нас</p>
+      <ul>
+        <li>
+          <p>Почта:</p>
+          <p>Телефон:</p>
+          <p>Режим работы:</p>
+          <p>Адрес:</p>
+          <p><a href="https://vk.com/qit24" target="_blank"><img src="../asset/vk.svg" width="40" height="40" class="footer_icon"></img></a></p>
+        </li>
+        <li>
+          <p><a href="mailto:info@qit24.ru" target="_blank">info@qit24.ru</a></p>
+          <p><a href="tel:83532323247">+7 (3532) 32-32-47</a></p>
+          <p>Пн. – Пт.: с 9:00 до 18:00</p>
+          <p>460036, г. Оренбург, ул. Карагандинская, 108. помещ. 1А</p>
+          <p><a href="https://t.me/qit24_company"><img src="../asset/telegram.svg" width="40" height="40" class="footer_icon"></img></a></p>
+          
+        </li>
+      </ul>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="../js/getCloset.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/sendOrder.js"></script>
+    <script src="../js/filter.js"></script>
+    <script src="../js/mailTo.js"></script>
+    <script src="../js/newsSidebar.js"></script>
+  </body>
+</html>
